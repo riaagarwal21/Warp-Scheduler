@@ -78,5 +78,10 @@ To run and simulate this RTL design on your local system:
   dot -Tpng warp_sched.dot -o schematic.png
   ```
 ---
+## Related Blog
+
+Read the related blog written by me by clicking [here](https://medium.com/@riaagarwal2512/hardware-at-warp-speed-ad20ba0bdc19).
+
+---
 
 > 📌 Created with ❤️ by Ria Agarwal
