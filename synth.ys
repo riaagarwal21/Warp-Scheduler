@@ -1,0 +1,22 @@
+# Yosys synthesis script
+
+# Read in your Verilog file(s)
+read_verilog warp_scheduler.v
+
+# Perform synthesis
+synth -top warp_scheduler
+
+# Full optimization step to apply logic optimizations
+opt -full
+
+# Show the synthesized design
+show
+
+# Write the schematic to a dot file
+write_graph warp_scheduler_schematic.dot
+
+# Optionally, write the synthesized netlist to a file (e.g., gate-level netlist in BLIF format)
+write_blif warp_scheduler.blif
+
+# Optionally, save the optimized design as Verilog (gate-level netlist)
+write_verilog warp_scheduler_optimized.v
